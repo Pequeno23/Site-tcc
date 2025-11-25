@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Endless Awakening</title>
+    
+    <!-- Tailwind CSS (Framework) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="text-white overflow-x-hidden bg-[#0d0628] font-poppins">
+
+    <!-- =========== Cabeçalho / Barra de Navegação =========== -->
+    <header class="w-full fixed top-0 left-0 z-50 backdrop-blur-sm bg-[#0d0628]/80">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-center">
+            
+            <!-- Logo/Título -->
+            <a href="" class="absolute left-4 sm:left-6 lg:left-8 top-1/2 -translate-y-1/2 font-pixel text-gold text-lg md:text-xl" >
+                T.E.A 
+            </a>
+
+            <!-- Menu de Navegação -->
+            <nav id="main-nav" class="nav-container hidden sm:flex">
+                <a href="../" class="nav-link">Início</a>
+                <a href="" class="nav-link active">Download</a>
+                <a href="../design/" class="nav-link">Design</a>
+                <a href="../desenvolvimento/" class="nav-link">Desenvolvimento</a>
+                <a href="/gameplay/" class="nav-link">Gameplay</a>
+                <a href="../sobre/" class="nav-link">Sobre TEA</a>
+            </nav>
+
+
+
+                <!-- Ícone de Mídia Social (Instagram) -->
+            <div class="absolute right-16 sm:right-16 lg:right-24 top-1/2 -translate-y-1/2">
+                <a href="https://www.instagram.com/theendlessawakening?utm_source=ig_web_button_share_sheet&igsh=aW9rcDd1cmR2Nng0" target="_blank" rel="noopener noreferrer" class="social-link hidden sm:block text-white hover:text-gold transition duration-200" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+            </div>
+            
+        </div>
+    </header>
+
+    <main class="pt-24">
+        <section class="hero-section min-h-screen w-full flex items-center justify-center p-4">
+            <section class="min-h-[50vh] flex flex-col items-center justify-center text-center px-4 pt-16 pb-12 sm:pt-24 sm:pb-16 relative overflow-hidden border-b border-purple-400/20"> 
+            <div class="relative z-10 animate-on-scroll is-visible">
+                <h1 class="font-pixel text-3xl sm:text-5xl lg:text-6xl text-gold section-title-glow mb-4">
+                    Faça o download do jogo!
+                </h1>
+                <p class="text-gray-300 max-w-3xl mx-auto text-lg sm:text-xl">
+                    Disponivel somente para PC.
+                </p>
+            </div>
+           </div>
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center max-w-6xl w-full animate-on-scroll">
+
+                <div class="flex justify-center">
+                    <img src="../Imagens/Logo inicio site.png" alt="Logo The Endless Awakening" class="w-full max-w-md purple-glow-effect">
+                </div>
+
+                <div class="flex flex-col items-center space-y-8">
+                    <a href="../joguinho papai.zip" id="download-btn" class="cursor-pointer font-pixel text-white bg-purple-600 px-8 py-3 rounded-lg text-lg download-button-glow hover:bg-purple-700 transition transform hover:scale-105">
+                        Download
+                    </a>
+                    <img src="../Imagens/personagem download.png" alt="Personagem do Jogo" class="w-48 sm:w-64 lg:w-80 purple-glow-effect">
+
+                    <p id="status-msg" class="text-sm text-gray-400 hidden">Iniciando download...</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+     <!-- Call to Action (Reutilizando a ideia de link externo) -->
+        <section class="py-16 sm:py-24 text-center">
+           
+     <h3 class="font-pixel text-xl sm:text-2xl text-gold mb-6">Faça parte da nossa comunidade!!!</h3>
+                <a href="https://discord.gg/9zNEpE4r8" class="inline-block bg-purple-700 text-white font-pixel px-8 py-4 rounded-lg text-lg transition duration-300 transform hover:scale-105 hover:bg-purple-600 shadow-xl border-2 border-gold/50">
+                    Nosso discord
+                </a>
+           
+        </section>
+
+     <!-- =========== Rodapé =========== -->
+    <footer class="bg-black/30 py-8 text-center text-gray-400 border-t border-purple-400/20">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="mb-2">&copy; 2024 The Endless Awakening. Todos os direitos reservados.</p>
+            <p class="font-pixel text-sm text-gold">T.E.A</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

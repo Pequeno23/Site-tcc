@@ -12,41 +12,55 @@ body {
     font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: white; /* Garante texto branco por padrão */
 }
 
-/* Classe para a fonte pixelada com efeito de brilho */
+/* CONFIGURAÇÃO DE FONTES */
+.font-poppins { font-family: 'Poppins', sans-serif; } /* Manter por compatibilidade Tailwind */
 .font-pixel {
     font-family: 'Press Start 2P', cursive;
+    /* Adiciona um brilho sutil à fonte pixelada */
     text-shadow: 0 0 8px rgba(255, 187, 0, 0.5);
 }
 
-/* Cor do texto dourado para destaque */
+/* Cor do texto dourado para destaque (ajustada para #FFBB00) */
 .text-gold {
     color: #FFBB00;
 }
 
- 
 /* === ESTILOS DA BARRA DE NAVEGAÇÃO === */
 
+/* Estilos de Navegação para Mobile (Padrão) */
 .nav-container {
-    display: flex;
+    display: none; /* Escondido por padrão, mostrado por JS no mobile */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 6, 40, 0.95); /* Fundo opaco para mobile */
+    z-index: 40;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 1rem; /* Espaçamento para telas menores */
-    background-color: rgba(23, 15, 66, 0.4);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 9999px;
-    padding: 0.5rem 1rem;
+    text-align: center;
+    transition: transform 0.3s ease-out;
+    transform: translateX(-100%);
+}
+
+.nav-container.active {
+    display: flex;
+    transform: translateX(0);
 }
 
 .nav-link {
     color: #e5e7eb;
+    text-decoration: none;
     transition: color 0.3s ease;
-    font-size: 0.75rem; /* Fonte menor para mobile */
+    font-size: 1.5rem; /* Fonte maior para mobile (menu aberto) */
     font-weight: 500;
-    white-space: nowrap; /* Impede que o texto quebre linha */
-    padding: 0.25rem 0.5rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem 0;
 }
 
 .nav-link:hover {
@@ -68,31 +82,39 @@ body {
     transform: scale(1.1);
 }
 
-/* Media query para telas maiores (desktop) */
-@media (min-width: 768px) {
+/* Media query para telas maiores (desktop) - Revertendo o layout para a barra horizontal */
+@media (min-width: 768px) { /* md breakpoint */
     .nav-container {
-        gap: 3rem; /* Espaçamento aumentado */
+        /* Posição estática para o menu horizontal de desktop */
+        position: static;
+        display: flex !important; /* Força a exibição como flexível no desktop */
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        background-color: rgba(23, 15, 66, 0.4);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 9999px;
         padding: 0.75rem 2.5rem; /* Padding aumentado */
+        transform: translateX(0);
+        z-index: auto;
+        gap: 3rem; /* Espaçamento aumentado */
     }
     .nav-link {
         font-size: 1rem; /* Fonte aumentada para 16px */
         padding: 0;
+        margin: 0;
     }
 }
 
 
-/* === ANIMAÇÕES DE SCROLL === */
-.animate-on-scroll {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    transition-delay: var(--animation-delay, 0s);
+/* === TÍTULO PRINCIPAL (Glow Sutil Dourado - conforme solicitado) === */
+.section-title-glow {
+    /* Brilho dourado/amarelo sutil, alinhado ao pedido de 'nada brilhante' (agressivo) */
+    text-shadow: 0 0 3px #FFBB00, 0 0 10px rgba(255, 187, 0, 0.4);
 }
 
-.animate-on-scroll.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 
 /* === ESTILOS GERAIS DA PÁGINA === */

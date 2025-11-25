@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento | The Endless Awakening</title>
+    
+    <!-- Tailwind CSS (Framework) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Popping para texto, Press Start 2P para títulos/pixel) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- Link para o CSS e JS externo (estilos e interatividade) -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="text-white overflow-x-hidden bg-[#0d0628] font-poppins">
+
+    <!-- =========== Cabeçalho / Barra de Navegação (Consistente com outras páginas) =========== -->
+    <header class="w-full fixed top-0 left-0 z-50 backdrop-blur-sm bg-[#0d0628]/80">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-center">
+            
+            <!-- Logo/Título -->
+            <a href="" class="absolute left-4 sm:left-6 lg:left-8 top-1/2 -translate-y-1/2 font-pixel text-gold text-lg md:text-xl" >
+                T.E.A 
+            </a>
+
+            <!-- Menu de Navegação (Desktop/Mobile) -->
+            <nav id="main-nav" class="nav-container hidden sm:flex">
+                <a href="../" class="nav-link">Início</a>
+                <a href="../download/" class="nav-link">Download</a>
+                <a href="../design/" class="nav-link">Design</a>
+                <a href="" class="nav-link active">Desenvolvimento</a>
+                <a href="../gameplay/" class="nav-link">Gameplay</a>
+                <a href="../sobre/" class="nav-link">Sobre TEA</a>
+            </nav>
+
+
+            <!-- Ícone de Mídia Social (Instagram) -->
+            <div class="absolute right-16 sm:right-16 lg:right-24 top-1/2 -translate-y-1/2">
+                <a href="https://www.instagram.com/theendlessawakening?utm_source=ig_web_button_share_sheet&igsh=aW9rcDd1cmR2Nng0" target="_blank" rel="noopener noreferrer" class="social-link hidden sm:block text-white hover:text-gold transition duration-200" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+            </div>
+            
+            <!-- Botão do Menu Hambúrguer (Mobile) -->
+            <button id="menu-toggle" class="sm:hidden absolute right-4 top-1/2 -translate-y-1/2 z-50 p-2 rounded-md hover:bg-white/10 transition duration-200" aria-label="Toggle navigation menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+        </div>
+    </header>
+
+    <main class="pt-24 bg-[#0d0628]">
+
+        <!-- =========== Seção Principal de Título =========== -->
+        <section class="min-h-[50vh] flex flex-col items-center justify-center text-center px-4 pt-16 pb-12 sm:pt-24 sm:pb-16 relative overflow-hidden border-b border-purple-400/20"> 
+            <div class="relative z-10 animate-on-scroll is-visible">
+                <h1 class="font-pixel text-3xl sm:text-5xl lg:text-6xl text-gold section-title-glow mb-4">
+                    Desenvolvimento do jogo
+                </h1>
+                <p class="text-gray-300 max-w-3xl mx-auto text-lg sm:text-xl">
+                    Por trás do universo de The Endless Awakening.
+                </p>
+            </div>
+            <!-- Elemento de fundo sutil -->
+            <div class="absolute inset-0 bg-gradient-to-b from-[#0d0628] to-purple-900/10 opacity-70"></div>
+        </section>
+
+        <!-- =========== Secção 1: Stack Técnica (Engine e Linguagem) =========== -->
+        <section class="py-16 sm:py-24 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 items-start gap-12 animate-on-scroll">
+                
+                <div class="lg:col-span-2 bg-black bg-opacity-20 backdrop-blur-sm p-8 rounded-xl border border-purple-400/20 shadow-lg h-full">
+                    <h3 class="font-pixel text-xl sm:text-2xl text-gold mb-6 border-b border-purple-400/50 pb-3">A Fundação Técnica do T.E.A</h3>
+                    <ul class="space-y-4 text-gray-300 leading-relaxed list-disc list-inside ml-4">
+                        <li>
+                            <strong class="text-white">Engine de Jogo:</strong> Utilizamos o <strong class="text-gold">Gamemaker</strong>, Robustez e Multiplataforma: O GameMaker é conhecido por sua estabilidade, permitindo o desenvolvimento de jogos que podem ser exportados facilmente para diversas plataformas (PC, mobile, etc.) 
+                        </li>
+                        <li><strong class="text-white">Comunidade Vasta:</strong> Possui uma vasta comunidade de apoio e recursos, o que é fundamental para a solução de problemas e a busca por soluções inovadoras no desenvolvimento de sistemas de cartas complexos</li>
+                        <li>
+                            <strong class="text-white">Linguagem Principal:</strong> O código principal do jogo é escrito em <strong class="text-gold">GML</strong>.O GML facilita a gestão de regras de jogo complexas, estados de cartas e interações de combate devido à sua tipagem forte e sintaxe limpa, tornando o código mais fácil de ler, manter e depurar.
+                        </li>
+                        <li>
+                            <strong class="text-white">Controle de Versionamento:</strong> Todo o projeto é versionado usando <strong class="text-gold">Git</strong>, hospedado em um repositório privado para garantir a colaboração e a segurança do código.
+                        </li>
+                    </ul>
+                    <p class="text-gray-300 leading-relaxed mt-4">
+                        Esta combinação nos permite atualizar com facilidade nosso jogo mantendo um controle de atualizações constante.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-1 flex flex-col gap-6 h-full">
+                    <div class="w-full aspect-[4/5] bg-gray-900/50 rounded-xl border border-purple-400/20 flex items-center justify-center overflow-hidden shadow-lg">
+                        <img src="/Imagens/gml.png" onerror="this.onerror=null; this.src='https://placehold.co/400x500/2c1653/ffffff?text=Estrutura+Logica';" alt="Conceito de Estrutura de Código" class="w-full h-full object-cover rounded-xl transition duration-500 hover:scale-105">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 sm:py-24 bg-[#1a0f3d] overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 animate-on-scroll">
+                <h3 class="font-pixel text-2xl sm:text-3xl text-center text-gold section-title-glow mb-12">Nossas inspirações</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                
+                    <div class="bg-black/30 p-6 rounded-xl border border-gold/20 shadow-xl transition duration-300 hover:scale-[1.05]">
+                        <h4 class="font-pixel text-lg text-gold mb-3">Pokemon 90' 00'</h4>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Nossa maior inspiração para desenvolver The Endless Awakening foi os jogos inciais de Pokemon dos anos 90' e 2000' com estilos Topdown e batalhas em turno como por exemplo: <strong class="text-gold">Pokemon Fire Red</strong> e <strong class="text-gold">Pokemon Emerald</strong>.
+                        </p>
+                    </div>
+
+                   
+                    <div class="bg-black/30 p-6 rounded-xl border border-gold/20 shadow-xl transition duration-300 hover:scale-[1.05]">
+                        <h4 class="font-pixel text-lg text-gold mb-3">Dungeons & Dragons</h4>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Pela narrativa construida e consolidada a anos na comunidade de RPG, usamos de inspiração para construção de mundo e narrativa assim lembrando as velhas campanhas de  <strong class="text-gold">D&D (Dungeons & Dragons)</strong>.
+                        </p>
+                    </div>
+
+                    <div class="bg-black/30 p-6 rounded-xl border border-gold/20 shadow-xl transition duration-300 hover:scale-[1.05]">
+                        <h4 class="font-pixel text-lg text-gold mb-3">Hollow Knight</h4>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Usamos <strong class="text-gold">Hollow Knight</strong> de inspiração para criar amuletos e as habilidades para nossa personagem. E também na nossa interface e design do inventario.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== Secção 3: Referências e Inspirações =========== -->
+        <section class="py-16 sm:py-24 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 items-center gap-12 animate-on-scroll">
+                
+                <div class="lg:col-span-1 w-full aspect-video max-w-lg mx-auto lg:mx-0 bg-gray-900/50 rounded-xl border border-purple-400/20 flex items-center justify-center overflow-hidden shadow-lg">
+                    <img src="/Imagens/pokemon.jpeg" onerror="this.onerror=null; this.src='https://placehold.co/80x450/3e226a/ffffff?text=Referencias+Jogos';" alt="Imagem Conceitual de Cartas de Referência" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                </div>
+
+                <div class="lg:col-span-1 bg-black bg-opacity-20 backdrop-blur-sm p-8 rounded-xl border border-purple-400/20 shadow-lg h-full">
+                    <h3 class="font-pixel text-xl sm:text-2xl text-gold mb-6 border-b border-purple-400/50 pb-3">Um pouco mais sobre nosso jogo</h3>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        T.E.A. foi cuidadosamente desenvolvido para proporcionar uma experiência de jogo imersiva e estratégica. Nosso objetivo é entregar um jogo de alta qualidade e, para isso, faremos a disponibilização inicial exclusivamente para PC. Esta decisão nos permite focar totalmente na otimização da experiência em uma única plataforma, garantindo a melhor performance e estabilidade para nossos jogadores.
+                    </p>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Call to Action (Reutilizando a ideia de link externo) -->
+        <section class="py-16 sm:py-24 text-center">
+            <div class="max-w-xl mx-auto px-4 animate-on-scroll">
+                <!-- CLASSE text-white SUBSTITUÍDA POR text-gold -->
+                <h3 class="font-pixel text-xl sm:text-2xl text-gold mb-6">Pronto para Despertar?</h3>
+                <a href="../download/" class="inline-block bg-purple-700 text-white font-pixel px-8 py-4 rounded-lg text-lg transition duration-300 transform hover:scale-105 hover:bg-purple-600 shadow-xl border-2 border-gold/50">
+                   Faça o Download!
+                </a>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- =========== Rodapé =========== -->
+    <footer class="bg-black/30 py-8 text-center text-gray-400 border-t border-purple-400/20">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="mb-2">&copy; 2024 The Endless Awakening. Todos os direitos reservados.</p>
+            <p class="font-pixel text-sm text-gold">T.E.A</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

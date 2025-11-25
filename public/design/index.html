@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Conceitual | The Endless Awakening</title>
+    
+    <!-- Tailwind CSS (Framework) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- Link para o CSS externo -->
+    <link rel="stylesheet" href="../style.css">
+    
+</head>
+<body class="text-white overflow-x-hidden bg-[#0d0628] font-poppins">
+
+    <!-- =========== Cabeçalho / Barra de Navegação =========== -->
+    <header class="w-full fixed top-0 left-0 z-50 backdrop-blur-sm bg-[#0d0628]/80">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-center">
+            
+           <!-- Logo/Título -->
+            <a href="" class="absolute left-4 sm:left-6 lg:left-8 top-1/2 -translate-y-1/2 font-pixel text-gold text-lg md:text-xl" >
+                T.E.A 
+            </a>
+
+            <!-- Menu de Navegação (Desktop/Mobile) -->
+            <nav id="main-nav" class="nav-container hidden sm:flex">
+                <a href="../" class="nav-link">Início</a>
+                <a href="../download/" class="nav-link">Download</a>
+                <a href="" class="nav-link active">Design</a>
+                <a href="../desenvolvimento/" class="nav-link">Desenvolvimento</a>
+                <a href="../gameplay/" class="nav-link">Gameplay</a>
+                <a href="../sobre/" class="nav-link">Sobre TEA</a>
+            </nav>
+
+
+            <!-- Ícone de Mídia Social (Instagram) -->
+            <div class="absolute right-16 sm:right-16 lg:right-24 top-1/2 -translate-y-1/2">
+                <a href="https://www.instagram.com/theendlessawakening?utm_source=ig_web_button_share_sheet&igsh=aW9rcDd1cmR2Nng0" target="_blank" rel="noopener noreferrer" class="social-link hidden sm:block text-white hover:text-gold transition duration-200" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+            </div>
+            
+            <!-- Botão do Menu Hambúrguer (Mobile) -->
+            <button id="menu-toggle" class="sm:hidden absolute right-4 top-1/2 -translate-y-1/2 z-50 p-2 rounded-md hover:bg-white/10 transition duration-200" aria-label="Toggle navigation menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+        </div>
+    </header>
+
+    <main class="pt-24 bg-[#0d0628]">
+
+        <!-- =========== Seção Principal de Título =========== -->
+        <section class="min-h-[50vh] flex flex-col items-center justify-center text-center px-4 pt-16 pb-12 sm:pt-24 sm:pb-16 relative overflow-hidden border-b border-purple-400/20"> 
+            <div class="relative z-10 animate-on-scroll is-visible">
+                <h1 class="font-pixel text-3xl sm:text-5xl lg:text-6xl text-gold section-title-glow mb-4">
+                    Design & Arte Conceitual
+                </h1>
+                <p class="text-gray-300 max-w-3xl mx-auto text-lg sm:text-xl">
+                    Da Ideia Inicial à Estética Final de The Endless Awakening.
+                </p>
+            </div>
+            <!-- Elemento de fundo sutil para a seção -->
+            <div class="absolute inset-0 bg-gradient-to-b from-[#0d0628] to-purple-900/10 opacity-70"></div>
+        </section>
+
+        <!-- =========== Secção 1: Filosofia de Design de Jogo =========== -->
+        <section class="py-16 sm:py-24 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 items-start gap-12 animate-on-scroll">
+                <div class="bg-black bg-opacity-20 backdrop-blur-sm p-8 rounded-xl border border-purple-400/20 shadow-lg h-full">
+                    <h3 class="font-pixel text-xl sm:text-2xl text-gold mb-6 border-b border-purple-400/50 pb-3">A Essência do Despertar</h3>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        O design de The Endless Awakening (T.E.A) foi concebido em torno de dois pilares principais: <strong class="text-gold">Narrativa Empática</strong> e <strong class="text-gold">Estratégia Profunda</strong>. Queremos que cada duelo de cartas não seja apenas uma batalha de poder, mas uma manifestação lógica e emocional do universo interior da protagonista. 
+                    </p>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        A jogabilidade por turnos e o sistema de cartas foram escolhidos para incentivar o <strong class="text-gold">raciocínio lógico</strong> e a antecipação, refletindo o tema central de processamento de informações e superação de desafios cognitivos.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        A estética visual mistura elementos de fantasia com a <strong class="text-gold">arte pixel top-down</strong>, tendo uma interface limpa e leve, para evitar qualquer sobre carga sensorial.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-6 h-full">
+                    <div class="w-full aspect-video bg-gray-900/50 rounded-xl border border-purple-400/20 flex items-center justify-center overflow-hidden shadow-lg">
+                        <img src="../Imagens/floresta de cima.png" onerror="this.onerror=null; this.src='https://placehold.co/800x450/3e226a/ffffff?text=Visao+Mundo+Conceitual';" alt="Arte Conceitual: Visão de Mundo" class="w-full h-full object-cover rounded-xl transition duration-500 hover:scale-105">
+                    </div>
+                    <div class="bg-black bg-opacity-20 backdrop-blur-sm p-6 rounded-xl border border-purple-400/20 text-sm text-gray-400">
+                        <p><strong>Conceito Visual:</strong> O contraste entre o roxo profundo e os detalhes em amarelo/dourado estabelece o tom de mistério e a busca por iluminação dentro do despertar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== Secção 2: Galeria de Arte Conceitual =========== -->
+        <section class="py-16 sm:py-24 bg-[#1a0f3d] overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 animate-on-scroll">
+                <h3 class="font-pixel text-2xl sm:text-3xl text-center text-gold section-title-glow mb-12">Arte Conceitual: Galeria de Imagens</h3>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Imagem 1: Personagem Principal -->
+                    <div class="bg-black/30 rounded-xl overflow-hidden border border-purple-400/20 shadow-xl transition duration-300 hover:scale-[1.03]">
+                        <img src="../Imagens/lana apontando.gif" onerror="this.onerror=null; this.src='https://placehold.co/600x800/2e1955/ffffff?text=Personagem+1';" alt="Arte Conceitual de Personagem 1" class="w-full aspect-[3/4] object-cover">
+                        <p class="p-4 text-sm text-gray-400">Design final do design da protagonista <strong class="text-gold">'Lana'</strong>, focado em silhueta e emoção.</p>
+                    </div>
+
+                    <!-- Imagem 2: Design de Carta -->
+                    <div class="bg-black/30 rounded-xl overflow-hidden border border-purple-400/20 shadow-xl transition duration-300 hover:scale-[1.03]">
+                        <img src="../Imagens/carta stun diminuida.jpg" onerror="this.onerror=null; this.src='https://placehold.co/600x800/4c347f/ffffff?text=Carta+Habilidade';" alt="Arte Conceitual de Carta de Habilidade" class="w-full aspect-[3/4] object-cover">
+                        <p class="p-4 text-sm text-gray-400">Design da habilidade de <strong class="text-gold">'Stun'</strong>.</p>
+                    </div>
+                    <!-- Imagem 3: Inimigo/Boss -->
+                    <div class="bg-black/30 rounded-xl overflow-hidden border border-purple-400/20 shadow-xl transition duration-300 hover:scale-[1.03]">
+                        <img src="../Imagens/rsto rei trono.gif" onerror="this.onerror=null; this.src='https://placehold.co/600x800/5d4099/ffffff?text=Boss+Conceitual';" alt="Arte Conceitual de um Boss" class="w-full aspect-[5/6] object-cover">
+                        <p class="p-4 text-sm text-gray-400">O grande Rei Rato chamado de <strong class="text-gold">'Croen'</strong>.</p>
+                    </div>
+
+                    <!-- Imagem 4: Cenário 1 (Desktop: 2ª linha, Mobile: 4ª) -->
+                    <div class="bg-black/30 rounded-xl overflow-hidden border border-purple-400/20 shadow-xl transition duration-300 hover:scale-[1.03] sm:col-span-2 lg:col-span-1">
+                        <img src="../Imagens/floresta aberta personagem.png" onerror="this.onerror=null; this.src='https://placehold.co/600x400/2e1955/ffffff?text=Cenario+Exterior';" alt="Arte Conceitual de Cenário Exterior" class="w-full aspect-[2/2] object-cover">
+                        <p class="p-4 text-sm text-gray-400">Arte conceitual de <strong class="text-gold">'Lana'</strong> perdida na floresta. </p>
+                    </div>
+                    
+                    <!-- Imagem 5: Iconografia UI -->
+                    <div class="bg-black/30 rounded-xl overflow-hidden border border-purple-400/20 shadow-xl transition duration-300 hover:scale-[1.03] lg:col-span-2">
+                        <img src="../Imagens/fundo de batalha com a barra.png" onerror="this.onerror=null; this.src='https://placehold.co/1200x600/4c347f/ffffff?text=Iconografia+UI';" alt="Mockup de Ícones de Interface" class="w-full aspect-[2/1] object-cover">
+                        <p class="p-4 text-sm text-gray-400">Design da <strong class="text-gold">tela de combate</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+       <!-- Call to Action (Reutilizando a ideia de link externo) -->
+        <section class="py-16 sm:py-24 text-center">
+            <div class="max-w-xl mx-auto px-4 animate-on-scroll">
+                <!-- CLASSE text-white SUBSTITUÍDA POR text-gold -->
+                <h3 class="font-pixel text-xl sm:text-2xl text-gold mb-6">Pronto para Despertar?</h3>
+                <a href="../download/" class="inline-block bg-purple-700 text-white font-pixel px-8 py-4 rounded-lg text-lg transition duration-300 transform hover:scale-105 hover:bg-purple-600 shadow-xl border-2 border-gold/50">
+                   Faça o Download!
+                </a>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- =========== Rodapé =========== -->
+    <footer class="bg-black/30 py-8 text-center text-gray-400 border-t border-purple-400/20">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="mb-2">&copy; 2024 The Endless Awakening. Todos os direitos reservados.</p>
+            <p class="font-pixel text-sm text-gold">T.E.A</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
